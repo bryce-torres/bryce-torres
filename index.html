@@ -84,9 +84,9 @@
 
     /* Style the header */
     .header {
-    background-color: #f44336;
-    padding: 30px 40px;
-    color: white;
+    background-color: #000000;
+    padding: 10px 40px;
+    color: rgb(255, 255, 255);
     text-align: center;
     }
 
@@ -129,31 +129,40 @@
 </head>
 
 <body>
-
 <main>
 <h1>Justin Bryce M. Torres</h1>
-   
-<section>
-    <h2>Learning</h2>
-        <p>Learn new stuff about Data Engineering <a href="https://app.datacamp.com/" target = "_blank">DataCamp</a></p>
-        <p>Learn about Web Development <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app" target = "_blank">Freecodecamp</a></p>
-        <p>Apply knowledge <a href="https://github.com/bryce-torres" target = "_blank">GitHub</a></p>
-</section>
 
-<section>
-    <h2>Reference</h2>
-        <p>Web Dev Reference <a href="https://www.w3schools.com" target = "_blank">W3Schools</a></p>
-        <p>Data Engineering Reference <a href="https://www.geeksforgeeks.org/data-engineering/" target = "_blank">GeeksforGeeks</a></p>
-</section>
+<a href = "https://www.google.com/"><img src="google_icon.png" width="50" height="50"></a>
+<a href="https://app.datacamp.com/" target = "_blank"><img src="datacamp_icon.png" width="50" height="50"></a>
+<a href="https://www.freecodecamp.org/learn/" target = "_blank"><img src="freecodecamp_icon.png" width="50" height="50"></a>
+<a href="https://github.com/bryce-torres" target = "_blank"><img src="github_icon.png" width="50" height="50"></a>
+<a href="https://www.w3schools.com" target = "_blank"><img src="w3schools_icon.png" width="50" height="50"></a>
+<a href="https://www.geeksforgeeks.org/data-engineering/" target = "_blank"><img src="geeksforgeeks_icon.png" width="50" height="50"></a>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
+  <h2 style="margin:5px">Daily Tasks</h2>
+  <input type="text" id="myInput" placeholder="add new tasks here...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="myUL">
-  <li>Example task</li>
+    <li>Learn Data Engineering on DataCamp</li>
+    <li>Learn Web Development on FreeCodeCamp</li>
+    <li>Apply knowledge on GitHub projects</li>
+</ul>
+
+<br/>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Long Term Goals</h2>
+  <input type="text" id="myInput" placeholder="add new tasks here...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+    <li>Build a data pipeline</li>
+    <li>Make a to-do list on this website that can store memory</li>
+    <li>Make tabs on this website to show different things, like to-do list, resume, and portfolio</li>
 </ul>
 
 <script>
