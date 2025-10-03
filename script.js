@@ -53,7 +53,7 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-//shows the task
+//shows the task 
 showTask();
 // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
