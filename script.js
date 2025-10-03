@@ -1,3 +1,6 @@
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -19,5 +22,38 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
+function addTask(){
+    if(inputBox.value === ''){
+        alert("you have to write something");
+    }
+    else{
+       let li = document.createElement("li");
+       li.innerHTML = inputBox.value;
+       listContainer.appendChild(li);
+       let span = document.createElement("span");
+       span.innerHTML = "\u00d7";
+       li.appendChild(span);
+    }
+    inputBox.value = '';
+    saveData();
+}
+
+listContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+
+function saveData(){
+    localStorage.setItem("data", listContainer.innerHTML);
+}
+
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+
+//shows the task
+showTask();
 // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
