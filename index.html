@@ -13,13 +13,14 @@
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id = "defaultOpen">To-Do List</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Resume</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Projects</button>
+  <button class="tablinks" onclick="openTab(event, 'To-do_list')" id = "defaultOpen">To-Do List</button>
+  <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+  <button class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
+  <button class="tablinks" onclick="openTab(event, 'Hobby')">Hobby</button>
 </div>
 
 <!-- Tab content -->
-<div id="London" class="tabcontent">
+<div id="To-do_list" class="tabcontent">
   <a href="https://app.datacamp.com/" target = "_blank"><img src="datacamp_icon.png" width="50" height="50"></a>
   <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app" target = "_blank"><img src="freecodecamp_icon.png" width="50" height="50"></a>
   <a href="https://github.com/bryce-torres" target = "_blank"><img src="github_icon.png" width="50" height="50"></a>
@@ -55,7 +56,7 @@
   </ul>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="Resume" class="tabcontent">
   <p>
   I'm a lecturer for the Electronics, Communications, and Computer Engineering department of Ateneo de Manila University.
   I'm currently working on learning about Data Engineering and a bit of Web Dev.
@@ -66,7 +67,11 @@
   </object>
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="Portfolio" class="tabcontent">
+  
+</div>
+
+<div id="Hobby" class="tabcontent">
   <h2>The Steam Grid Express</h2>
   <p>This was a game I worked on with my friends for a week-long game jam during the Covid-19 lockdown. We used Godot for the game engine.</p>
   <iframe frameborder="0" src="https://itch.io/embed/754810" width="552" height="167"><a href="https://3amgamedesign.itch.io/the-steam-grid-express">The Steam Grid Express by 3AM Game Design</a></iframe>

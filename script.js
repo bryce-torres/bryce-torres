@@ -1,7 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
