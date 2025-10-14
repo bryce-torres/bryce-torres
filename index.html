@@ -10,29 +10,31 @@
 
 <body onload="startTime()">
 <main>
-<h1>Justin Bryce M. Torres</h1>
-<div id="clock"></div>
-<div class="search">
-<form method="get" action="https://www.google.com/search">
-<input type="text" name="q" size="80" value="">
-</form>
-</div>
-<div>
-<a href = "https://www.google.com/"><img src="icons/google_icon.png" width="50" height="50"></a>
-<a href = "https://www.youtube.com/"><img src="icons/youtube_icon.png" width="50" height="50"></a>
-</div>
+<h1>Justin Bryce M. Torres<div id="clock"></div></h1>
+<p> This is a personal website I'm working on to learn basic web dev.</p>
 
 <!-- Tab links -->
 <div class="tab">
  <!--<img src = "torres_profile.jpg" width="100" height="140">-->
-
-  <button class="tablinks" onclick="openTab(event, 'To-do_list')" id = "defaultOpen">To-Do List</button>
+  
+  <button class="tablinks" onclick="openTab(event, 'Home')" id = "defaultOpen">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'To-do_list')">To-Do List</button>
   <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
   <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
   <button class="tablinks" onclick="openTab(event, 'Hobby')">Hobby</button>
 </div>
 
 <!-- Tab content -->
+<div id="Home" class="tabcontent">
+  <a href = "https://www.google.com/"><img src="icons/google_icon.png" width="50" height="50"></a>
+  <a href = "https://www.youtube.com/"><img src="icons/youtube_icon.png" width="50" height="50"></a>
+  <div class="search">
+  <h1>Search</h1>
+  <form method="get" action="https://www.google.com/search">
+  <input type="text" name="q" size="80" value="">
+  </form>
+  </div>
+</div>
 <div id="To-do_list" class="tabcontent">
   <a href="https://app.datacamp.com/" target = "_blank"><img src="icons/datacamp_icon.png" width="50" height="50"></a>
   <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu" target = "_blank"><img src="icons/freecodecamp_icon.png" width="50" height="50"></a>
@@ -41,6 +43,13 @@
   <a href="https://www.w3schools.com" target = "_blank"><img src="icons/w3schools_icon.png" width="50" height="50"></a>
   <a href="https://www.geeksforgeeks.org/data-engineering/" target = "_blank"><img src="icons/geeksforgeeks_icon.png" width="50" height="50"></a>
 
+  <h2>Daily Tasks</h2>
+  <ul id="myUL">
+    <li>Learn Data Engineering on DataCamp <input type="checkbox"></li>
+    <li>Learn Web Development on FreeCodeCamp <input type="checkbox"></li>
+    <li>Apply knowledge on GitHub projects <input type="checkbox"></li>
+  </ul>
+  
   <div class = "todo-app">
   <h2>To-Do List</h2>
   <input type = "text" id = "input-box" placeholder = "add text here...">
@@ -49,13 +58,6 @@
   </ul>
   </div>
   
-  <h2>Daily Tasks</h2>
-  <ul id="myUL">
-    <li>Learn Data Engineering on DataCamp <input type="checkbox"></li>
-    <li>Learn Web Development on FreeCodeCamp <input type="checkbox"></li>
-    <li>Apply knowledge on GitHub projects <input type="checkbox"></li>
-  </ul>
-
   <h2>Goals</h2>
   <ul id="myUL">
     <li>Build a data pipeline about relevant topics with good data visualization and post on Linkedin</li>
@@ -71,17 +73,19 @@
 </div>
 
 <div id="Resume" class="tabcontent">
+ <div>
+  <a href = "mailto:justinbrycetorres@gmail.com"><img src="icons/email_icon.png" width="25" height="25"></a>
+  <a href = "https://www.linkedin.com/in/justin-bryce-torres-130112131/"><img src="icons/linkedin_icon.png" width="25" height="25"></a>
+  <a href = "https://www.facebook.com/justinbryce.torres"><img src="icons/fb_icon.png" width="25" height="25"></a>
+</div>
+
   <h2>About</h2>
   <p>
   I'm a lecturer for the Electronics, Communications, and Computer Engineering department of Ateneo de Manila University.
   I'm currently working on learning about Data Engineering and a bit of Web Dev.
   </p>
   
-<div>
-  <a href = "mailto:justinbrycetorres@gmail.com"><img src="icons/email_icon.png" width="50" height="50"></a>
-  <a href = "https://www.linkedin.com/in/justin-bryce-torres-130112131/"><img src="icons/linkedin_icon.png" width="50" height="50"></a>
-  <a href = "https://www.facebook.com/justinbryce.torres"><img src="icons/fb_icon.png" width="50" height="50"></a>
-</div>
+
 
   <object data="torres_resume.pdf" type="application/pdf" width="800" height="600">
     <em><p>This is fallback content. Your browser does not support PDFs.</p></em>
