@@ -49,3 +49,19 @@
 body {
   font-family: "Arial", sans-serif;
 }
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#decreaseBtn,#increaseBtn {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#countDisplay {
+    font-size: 3rem;
+}
